@@ -1,0 +1,15 @@
+web1:
+  php_extensions:
+    - dom
+    - pdo
+    - pdo_sqlite
+    - pdo_mysql
+    - apc
+    - mcrypt
+    - soap
+    - gd
+    - freetype
+  document_root: /zimity
+  shared_writable_dirs:
+    - /zimity/protected/runtime
+    - /zimity/assets
