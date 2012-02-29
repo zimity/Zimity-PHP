@@ -1,0 +1,36 @@
+2012/02/28 21:21:34 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'zimity.imprint' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `imprint`.
+in /Users/mjparinas/Documents/Zimity-PHP/index.php (13)
+2012/02/28 21:38:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/mjparinas/Documents/Zimity-PHP/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(292): CFilterChain->run()
+#6 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('admin')
+#8 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('imprints/admin')
+#9 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=imprints/admin
+HTTP_REFERER=http://localhost:8888/index.php?r=imprints/view&id=53
+---
+2012/02/28 21:38:52 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/mjparinas/Documents/Zimity-PHP/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(292): CFilterChain->run()
+#6 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('admin')
+#8 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('imprints/admin')
+#9 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=imprints/admin
+HTTP_REFERER=http://localhost:8888/index.php?r=imprints/view&id=53
+---
