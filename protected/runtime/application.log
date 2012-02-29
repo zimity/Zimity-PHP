@@ -34,3 +34,476 @@ Stack trace:
 REQUEST_URI=/index.php?r=imprints/admin
 HTTP_REFERER=http://localhost:8888/index.php?r=imprints/view&id=53
 ---
+2012/02/28 22:20:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "comment".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('comment')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=comment
+---
+2012/02/28 22:20:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "comment".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('comment')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=comment
+---
+2012/02/28 22:25:20 [error] [exception.CException] exception 'CException' with message 'Property "SiteController.Html" is not defined.' in /Users/mjparinas/Documents/Zimity-PHP/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/protected/views/site/index.php(21): CComponent->__get('Html')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(127): require('/Users/mjparina...')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/mjparina...', NULL, true)
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(870): CBaseController->renderFile('/Users/mjparina...', NULL, true)
+#4 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#5 /Users/mjparinas/Documents/Zimity-PHP/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /Users/mjparinas/Documents/Zimity-PHP/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#7 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('index')
+#11 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#12 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=site/index
+HTTP_REFERER=http://localhost:8888/index.php?r=site/index
+---
+2012/02/28 22:34:12 [error] [exception.CException] exception 'CException' with message 'Property "SiteController.Html" is not defined.' in /Users/mjparinas/Documents/Zimity-PHP/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/protected/views/layouts/main.php(9): CComponent->__get('Html')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(127): require('/Users/mjparina...')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/mjparina...', Array, true)
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/Users/mjparina...', Array, true)
+#4 /Users/mjparinas/Documents/Zimity-PHP/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#5 /Users/mjparinas/Documents/Zimity-PHP/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#6 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(207): COutputProcessor->run()
+#7 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#8 /Users/mjparinas/Documents/Zimity-PHP/protected/views/layouts/column1.php(5): CBaseController->endContent()
+#9 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(127): require('/Users/mjparina...')
+#10 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/mjparina...', Array, true)
+#11 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(785): CBaseController->renderFile('/Users/mjparina...', Array, true)
+#12 /Users/mjparinas/Documents/Zimity-PHP/protected/controllers/SiteController.php(32): CController->render('index')
+#13 /Users/mjparinas/Documents/Zimity-PHP/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#14 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#16 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('index')
+#18 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#19 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=site/index
+HTTP_REFERER=http://localhost:8888/index.php?r=site/index
+---
+2012/02/28 22:39:50 [error] [php] Undefined variable: title_for_layout (/Users/mjparinas/Documents/Zimity-PHP/protected/views/layouts/main.php:20)
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/widgets/CContentDecorator.php(77): SiteController->renderFile()
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate()
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput()
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(207): CContentDecorator->run()
+#4 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(301): SiteController->endWidget()
+#5 /Users/mjparinas/Documents/Zimity-PHP/protected/views/layouts/column1.php(5): SiteController->endContent()
+#6 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(127): require()
+#7 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#8 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(785): SiteController->renderFile()
+#9 /Users/mjparinas/Documents/Zimity-PHP/protected/controllers/SiteController.php(32): SiteController->render()
+#10 /Users/mjparinas/Documents/Zimity-PHP/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#11 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(309): CInlineAction->runWithParams()
+#12 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(287): SiteController->runAction()
+#13 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#14 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): SiteController->run()
+#15 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#16 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=site/index
+in /Users/mjparinas/Documents/Zimity-PHP/protected/views/layouts/main.php (20)
+in /Users/mjparinas/Documents/Zimity-PHP/protected/views/layouts/column1.php (5)
+in /Users/mjparinas/Documents/Zimity-PHP/protected/controllers/SiteController.php (32)
+2012/02/28 22:40:12 [error] [exception.CException] exception 'CException' with message 'Property "SiteController.webroot" is not defined.' in /Users/mjparinas/Documents/Zimity-PHP/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/protected/views/layouts/main.php(28): CComponent->__get('webroot')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(127): require('/Users/mjparina...')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/mjparina...', Array, true)
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/Users/mjparina...', Array, true)
+#4 /Users/mjparinas/Documents/Zimity-PHP/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#5 /Users/mjparinas/Documents/Zimity-PHP/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#6 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(207): COutputProcessor->run()
+#7 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#8 /Users/mjparinas/Documents/Zimity-PHP/protected/views/layouts/column1.php(5): CBaseController->endContent()
+#9 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(127): require('/Users/mjparina...')
+#10 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/mjparina...', Array, true)
+#11 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(785): CBaseController->renderFile('/Users/mjparina...', Array, true)
+#12 /Users/mjparinas/Documents/Zimity-PHP/protected/controllers/SiteController.php(32): CController->render('index')
+#13 /Users/mjparinas/Documents/Zimity-PHP/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#14 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#16 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('index')
+#18 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#19 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=site/index
+HTTP_REFERER=http://localhost:8888/index.php?r=site/index
+---
+2012/02/28 22:41:53 [error] [php] Undefined variable: scripts_for_layout (/Users/mjparinas/Documents/Zimity-PHP/protected/views/layouts/main.php:74)
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/widgets/CContentDecorator.php(77): SiteController->renderFile()
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate()
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput()
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(207): CContentDecorator->run()
+#4 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(301): SiteController->endWidget()
+#5 /Users/mjparinas/Documents/Zimity-PHP/protected/views/layouts/column1.php(5): SiteController->endContent()
+#6 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(127): require()
+#7 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#8 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(785): SiteController->renderFile()
+#9 /Users/mjparinas/Documents/Zimity-PHP/protected/controllers/SiteController.php(32): SiteController->render()
+#10 /Users/mjparinas/Documents/Zimity-PHP/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#11 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(309): CInlineAction->runWithParams()
+#12 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(287): SiteController->runAction()
+#13 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#14 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): SiteController->run()
+#15 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#16 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=site/index
+in /Users/mjparinas/Documents/Zimity-PHP/protected/views/layouts/main.php (74)
+in /Users/mjparinas/Documents/Zimity-PHP/protected/views/layouts/column1.php (5)
+in /Users/mjparinas/Documents/Zimity-PHP/protected/controllers/SiteController.php (32)
+2012/02/28 22:42:13 [error] [exception.CException] exception 'CException' with message 'Property "SiteController.Html" is not defined.' in /Users/mjparinas/Documents/Zimity-PHP/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/protected/views/layouts/main.php(121): CComponent->__get('Html')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(127): require('/Users/mjparina...')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/mjparina...', Array, true)
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/Users/mjparina...', Array, true)
+#4 /Users/mjparinas/Documents/Zimity-PHP/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#5 /Users/mjparinas/Documents/Zimity-PHP/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#6 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(207): COutputProcessor->run()
+#7 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#8 /Users/mjparinas/Documents/Zimity-PHP/protected/views/layouts/column1.php(5): CBaseController->endContent()
+#9 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(127): require('/Users/mjparina...')
+#10 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/mjparina...', Array, true)
+#11 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(785): CBaseController->renderFile('/Users/mjparina...', Array, true)
+#12 /Users/mjparinas/Documents/Zimity-PHP/protected/controllers/SiteController.php(32): CController->render('index')
+#13 /Users/mjparinas/Documents/Zimity-PHP/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#14 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#16 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('index')
+#18 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#19 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=site/index
+HTTP_REFERER=http://localhost:8888/index.php?r=site/index
+---
+2012/02/28 22:43:02 [error] [exception.CException] exception 'CException' with message 'Property "SiteController.Html" is not defined.' in /Users/mjparinas/Documents/Zimity-PHP/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/protected/views/layouts/main.php(159): CComponent->__get('Html')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(127): require('/Users/mjparina...')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/mjparina...', Array, true)
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/Users/mjparina...', Array, true)
+#4 /Users/mjparinas/Documents/Zimity-PHP/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#5 /Users/mjparinas/Documents/Zimity-PHP/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#6 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(207): COutputProcessor->run()
+#7 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#8 /Users/mjparinas/Documents/Zimity-PHP/protected/views/layouts/column1.php(5): CBaseController->endContent()
+#9 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(127): require('/Users/mjparina...')
+#10 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/mjparina...', Array, true)
+#11 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(785): CBaseController->renderFile('/Users/mjparina...', Array, true)
+#12 /Users/mjparinas/Documents/Zimity-PHP/protected/controllers/SiteController.php(32): CController->render('index')
+#13 /Users/mjparinas/Documents/Zimity-PHP/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#14 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#16 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('index')
+#18 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#19 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=site/index
+HTTP_REFERER=http://localhost:8888/index.php?r=site/index
+---
+2012/02/28 22:50:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('about')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('about')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('site/about')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/about
+HTTP_REFERER=http://localhost:8888/index.php?r=site/index
+---
+2012/02/28 22:51:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dev".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('dev')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=dev
+HTTP_REFERER=http://localhost:8888/index.php?r=site/index
+---
+2012/02/28 22:51:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "privacy".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('privacy')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('privacy')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('site/privacy')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/privacy
+HTTP_REFERER=http://localhost:8888/index.php?r=site/index
+---
+2012/02/28 22:51:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('about')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('about')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('site/about')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/about
+HTTP_REFERER=http://localhost:8888/index.php?r=site/index
+---
+2012/02/28 22:52:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('about')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('about')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('site/about')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/about
+HTTP_REFERER=http://localhost:8888/index.php?r=site/about
+---
+2012/02/28 22:53:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dev".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('dev')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=dev
+HTTP_REFERER=http://localhost:8888/index.php?r=site/about
+---
+2012/02/28 22:53:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dev".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('dev')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=dev
+HTTP_REFERER=http://localhost:8888/index.php?r=dev
+---
+2012/02/28 22:53:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "jobs".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('jobs')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('jobs')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('site/jobs')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/jobs
+HTTP_REFERER=http://localhost:8888/index.php?r=dev
+---
+2012/02/28 22:53:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "terms".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('terms')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('terms')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('site/terms')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/terms
+HTTP_REFERER=http://localhost:8888/index.php?r=site/jobs
+---
+2012/02/28 22:53:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('about')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('about')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('site/about')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/about
+HTTP_REFERER=http://localhost:8888/index.php?r=site/terms
+---
+2012/02/28 22:54:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('about')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('about')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('site/about')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/about
+HTTP_REFERER=http://localhost:8888/index.php?r=site/terms
+---
+2012/02/28 22:54:39 [error] [php] include(Chtml.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/Users/mjparinas/Documents/Zimity-PHP/framework/YiiBase.php:418)
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/protected/views/layouts/main.php(35): spl_autoload_call()
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(127): require()
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/web/widgets/CContentDecorator.php(77): SiteController->renderFile()
+#4 /Users/mjparinas/Documents/Zimity-PHP/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate()
+#5 /Users/mjparinas/Documents/Zimity-PHP/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput()
+#6 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(207): CContentDecorator->run()
+#7 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(301): SiteController->endWidget()
+#8 /Users/mjparinas/Documents/Zimity-PHP/protected/views/layouts/column1.php(5): SiteController->endContent()
+#9 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(127): require()
+#10 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#11 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(785): SiteController->renderFile()
+#12 /Users/mjparinas/Documents/Zimity-PHP/framework/web/actions/CViewAction.php(141): SiteController->render()
+#13 /Users/mjparinas/Documents/Zimity-PHP/framework/web/actions/CAction.php(75): CViewAction->run()
+#14 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(309): CViewAction->runWithParams()
+#15 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(287): SiteController->runAction()
+#16 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#17 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): SiteController->run()
+#18 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#19 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=site/page&view=about
+in /Users/mjparinas/Documents/Zimity-PHP/protected/views/layouts/main.php (35)
+in /Users/mjparinas/Documents/Zimity-PHP/protected/views/layouts/column1.php (5)
+in /Users/mjparinas/Documents/Zimity-PHP/index.php (13)
+2012/02/28 22:54:56 [error] [php] include(Chtml.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/Users/mjparinas/Documents/Zimity-PHP/framework/YiiBase.php:418)
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/protected/views/layouts/main.php(35): spl_autoload_call()
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(127): require()
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/web/widgets/CContentDecorator.php(77): SiteController->renderFile()
+#4 /Users/mjparinas/Documents/Zimity-PHP/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate()
+#5 /Users/mjparinas/Documents/Zimity-PHP/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput()
+#6 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(207): CContentDecorator->run()
+#7 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(301): SiteController->endWidget()
+#8 /Users/mjparinas/Documents/Zimity-PHP/protected/views/layouts/column1.php(5): SiteController->endContent()
+#9 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(127): require()
+#10 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#11 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(785): SiteController->renderFile()
+#12 /Users/mjparinas/Documents/Zimity-PHP/framework/web/actions/CViewAction.php(141): SiteController->render()
+#13 /Users/mjparinas/Documents/Zimity-PHP/framework/web/actions/CAction.php(75): CViewAction->run()
+#14 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(309): CViewAction->runWithParams()
+#15 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(287): SiteController->runAction()
+#16 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#17 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): SiteController->run()
+#18 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#19 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=site/page&view=about
+in /Users/mjparinas/Documents/Zimity-PHP/protected/views/layouts/main.php (35)
+in /Users/mjparinas/Documents/Zimity-PHP/protected/views/layouts/column1.php (5)
+in /Users/mjparinas/Documents/Zimity-PHP/index.php (13)
+2012/02/28 22:55:00 [error] [php] include(Chtml.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/Users/mjparinas/Documents/Zimity-PHP/framework/YiiBase.php:418)
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/protected/views/layouts/main.php(35): spl_autoload_call()
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(127): require()
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/web/widgets/CContentDecorator.php(77): SiteController->renderFile()
+#4 /Users/mjparinas/Documents/Zimity-PHP/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate()
+#5 /Users/mjparinas/Documents/Zimity-PHP/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput()
+#6 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(207): CContentDecorator->run()
+#7 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(301): SiteController->endWidget()
+#8 /Users/mjparinas/Documents/Zimity-PHP/protected/views/layouts/column1.php(5): SiteController->endContent()
+#9 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(127): require()
+#10 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#11 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(785): SiteController->renderFile()
+#12 /Users/mjparinas/Documents/Zimity-PHP/framework/web/actions/CViewAction.php(141): SiteController->render()
+#13 /Users/mjparinas/Documents/Zimity-PHP/framework/web/actions/CAction.php(75): CViewAction->run()
+#14 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(309): CViewAction->runWithParams()
+#15 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(287): SiteController->runAction()
+#16 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#17 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): SiteController->run()
+#18 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#19 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=site/page&view=about
+in /Users/mjparinas/Documents/Zimity-PHP/protected/views/layouts/main.php (35)
+in /Users/mjparinas/Documents/Zimity-PHP/protected/views/layouts/column1.php (5)
+in /Users/mjparinas/Documents/Zimity-PHP/index.php (13)
+2012/02/28 22:56:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "jobs".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('jobs')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('jobs')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('site/jobs')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/jobs
+HTTP_REFERER=http://localhost:8888/index.php?r=site/page&view=about
+---
+2012/02/28 22:56:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "jobs".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('jobs')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('jobs')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('site/jobs')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/jobs
+HTTP_REFERER=http://localhost:8888/index.php?r=site/page&view=about
+---
+2012/02/28 22:56:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "jobs".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('jobs')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('jobs')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('site/jobs')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/jobs
+HTTP_REFERER=http://localhost:8888/index.php?r=site/page&view=about
+---
+2012/02/28 22:56:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pages".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('pages')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('pages')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('site/pages')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/pages&view=jobs
+HTTP_REFERER=http://localhost:8888/index.php?r=site/jobs
+---
+2012/02/28 22:56:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pages".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('pages')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('pages')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('site/pages')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/pages&view=jobs
+HTTP_REFERER=http://localhost:8888/index.php?r=site/jobs
+---
+2012/02/28 22:56:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "jobs" was not found.' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/actions/CViewAction.php:113
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/actions/CViewAction.php(124): CViewAction->resolveView('jobs')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/actions/CAction.php(75): CViewAction->run()
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(309): CAction->runWithParams(Array)
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#4 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('page')
+#6 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('site/page')
+#7 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php?r=site/page&view=jobs
+HTTP_REFERER=http://localhost:8888/index.php?r=site/pages&view=jobs
+---
+2012/02/28 22:56:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "jobs" was not found.' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/actions/CViewAction.php:113
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/actions/CViewAction.php(124): CViewAction->resolveView('jobs')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/actions/CAction.php(75): CViewAction->run()
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(309): CAction->runWithParams(Array)
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#4 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('page')
+#6 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('site/page')
+#7 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php?r=site/page&view=jobs
+HTTP_REFERER=http://localhost:8888/index.php?r=site/page&view=jobs
+---
