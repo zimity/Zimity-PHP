@@ -20,8 +20,10 @@
  * @property string $created
  * @property string $modified
  */
-class User extends CActiveRecord
+class User extends ZimityActiveRecord
 {
+	public $password_repeat;
+	
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -54,7 +56,7 @@ class User extends CActiveRecord
 			array('quote, email, facebook, twitter', 'length', 'max'=>50),
 			array('about', 'length', 'max'=>255),
 			array('activation_hash', 'length', 'max'=>40),
-			array('created, modified', 'safe'),
+			array('email', 'unique'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, type, firstname, lastname, quote, location, about, email, activated, activation_hash, facebook, twitter, deleted, created, modified', 'safe', 'on'=>'search'),

@@ -28,11 +28,11 @@
 	<?php echo CHtml::encode($data->about); ?>
 	<br />
 
-	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('email')); ?>:</b>
 	<?php echo CHtml::encode($data->email); ?>
 	<br />
 
+	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('activated')); ?>:</b>
 	<?php echo CHtml::encode($data->activated); ?>
 	<br />

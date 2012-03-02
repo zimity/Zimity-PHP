@@ -22,7 +22,7 @@
  * @property string $created
  * @property string $modified
  */
-class Imprint extends CActiveRecord
+class Imprint extends ZimityActiveRecord
 {
 	const TYPE_NOTE = 0;
 	const TYPE_PHOTO = 1;
@@ -50,12 +50,22 @@ class Imprint extends CActiveRecord
 		);
 	}
 	
+	public function getImprintText() {
+		$imprintType = $this->imprintType;
+		return isset($imprintType[$this->imp_type]) ? $imprintType[$this->imp_type] : "unknown imprint type ({$this->imp_type})";
+	}
+	
 	public function getShareType() {
 		return array(
 			self::SHARE_PRIVATE=>'Private',
 			self::SHARE_FRIENDS=>'Friends',
 			self::SHARE_GLOBAL=>'Global',
 		);
+	}
+	
+	public function getShareText() {
+		$shareType = $this->shareType;
+		return isset($shareType[$this->sharing]) ? $shareType[$this->sharing] : "unknown share type ({$this->sharing})";
 	}
 	
 	/**

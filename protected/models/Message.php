@@ -12,7 +12,7 @@
  * @property string $created
  * @property string $modified
  */
-class Message extends CActiveRecord
+class Message extends ZimityActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
@@ -42,7 +42,6 @@ class Message extends CActiveRecord
 		return array(
 			array('user_id, recipient_id, comment, deleted', 'required'),
 			array('user_id, recipient_id, deleted', 'numerical', 'integerOnly'=>true),
-			array('created, modified', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, user_id, recipient_id, comment, deleted, created, modified', 'safe', 'on'=>'search'),

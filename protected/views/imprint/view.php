@@ -19,8 +19,14 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id',
-		'user_id',
-		'imp_type',
+		array(
+			'name' => 'user_id',
+			'value' => CHtml::encode($model->user->firstname)
+		     ),
+		array(
+			'name' => 'imp_type',
+			'value' => CHtml::encode($model->getImprintText())
+		     ),
 		'title',
 		'note',
 		'slug',
@@ -29,7 +35,10 @@ $this->menu=array(
 		'altitude',
 		'bearing',
 		'speed',
-		'sharing',
+		array(
+			'name' => 'sharing',
+			'value' => CHtml::encode($model->getShareText())
+		     ),
 		'accuracy',
 		'syncd',
 		'deleted',
@@ -37,10 +46,3 @@ $this->menu=array(
 		'modified',
 	),
 )); ?>
-
-<?php
-$post=Imprint::model()->findByPk($model->id);
-echo User::model()->findByPk($post->comments[0]->user_id)->firstname . ' - ' . $post->comments[0]->comment;
-
-//echo print_r($author);
-?>

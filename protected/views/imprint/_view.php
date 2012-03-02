@@ -9,7 +9,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('imp_type')); ?>:</b>
-	<?php echo CHtml::encode($data->imp_type); ?>
+	<?php echo CHtml::encode($data->getImprintText()); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('title')); ?>:</b>
@@ -28,6 +28,7 @@
 	<?php echo CHtml::encode($data->latitude); ?>
 	<br />
 
+
 	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('longitude')); ?>:</b>
 	<?php echo CHtml::encode($data->longitude); ?>
@@ -43,12 +44,14 @@
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('speed')); ?>:</b>
 	<?php echo CHtml::encode($data->speed); ?>
-	<br />
+	<br />*/
+	?>
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('sharing')); ?>:</b>
-	<?php echo CHtml::encode($data->sharing); ?>
+	<?php echo CHtml::encode($data->getShareText()); ?>
 	<br />
-
+	
+	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('accuracy')); ?>:</b>
 	<?php echo CHtml::encode($data->accuracy); ?>
 	<br />

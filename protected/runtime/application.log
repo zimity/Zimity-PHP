@@ -1450,3 +1450,162 @@ Stack trace:
 REQUEST_URI=/index.php?r=imprint/view&id=51
 HTTP_REFERER=http://localhost:8888/index.php?r=imprint/index&Imprint_page=2
 ---
+2012/03/01 23:12:50 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (/Users/mjparinas/Documents/Zimity-PHP/framework/web/helpers/CHtml.php:85)
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(127): require()
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(96): ImprintController->renderInternal()
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(870): ImprintController->renderFile()
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/zii/widgets/CListView.php(242): ImprintController->renderPartial()
+#4 /Users/mjparinas/Documents/Zimity-PHP/framework/zii/widgets/CBaseListView.php(158): CListView->renderItems()
+#5 unknown(0): CListView->renderSection()
+#6 /Users/mjparinas/Documents/Zimity-PHP/framework/zii/widgets/CBaseListView.php(141): preg_replace_callback()
+#7 /Users/mjparinas/Documents/Zimity-PHP/framework/zii/widgets/CBaseListView.php(126): CListView->renderContent()
+#8 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(174): CListView->run()
+#9 /Users/mjparinas/Documents/Zimity-PHP/protected/views/imprint/index.php(17): ImprintController->widget()
+#10 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(127): require()
+#11 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(96): ImprintController->renderInternal()
+#12 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(870): ImprintController->renderFile()
+#13 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(783): ImprintController->renderPartial()
+#14 /Users/mjparinas/Documents/Zimity-PHP/protected/controllers/ImprintController.php(133): ImprintController->render()
+#15 /Users/mjparinas/Documents/Zimity-PHP/framework/web/actions/CInlineAction.php(50): ImprintController->actionIndex()
+#16 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(309): CInlineAction->runWithParams()
+#17 /Users/mjparinas/Documents/Zimity-PHP/framework/web/filters/CFilterChain.php(134): ImprintController->runAction()
+#18 /Users/mjparinas/Documents/Zimity-PHP/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#20 /Users/mjparinas/Documents/Zimity-PHP/framework/web/filters/CInlineFilter.php(59): ImprintController->filterAccessControl()
+#21 /Users/mjparinas/Documents/Zimity-PHP/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#22 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(292): CFilterChain->run()
+#23 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(266): ImprintController->runActionWithFilters()
+#24 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): ImprintController->run()
+#25 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#26 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=imprint/index
+in /Users/mjparinas/Documents/Zimity-PHP/protected/views/imprint/_view.php (12)
+in /Users/mjparinas/Documents/Zimity-PHP/protected/views/imprint/index.php (17)
+in /Users/mjparinas/Documents/Zimity-PHP/protected/controllers/ImprintController.php (133)
+2012/03/01 23:30:55 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (/Users/mjparinas/Documents/Zimity-PHP/framework/web/helpers/CHtml.php:85)
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(127): require()
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(96): ImprintController->renderInternal()
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(870): ImprintController->renderFile()
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/zii/widgets/CListView.php(242): ImprintController->renderPartial()
+#4 /Users/mjparinas/Documents/Zimity-PHP/framework/zii/widgets/CBaseListView.php(158): CListView->renderItems()
+#5 unknown(0): CListView->renderSection()
+#6 /Users/mjparinas/Documents/Zimity-PHP/framework/zii/widgets/CBaseListView.php(141): preg_replace_callback()
+#7 /Users/mjparinas/Documents/Zimity-PHP/framework/zii/widgets/CBaseListView.php(126): CListView->renderContent()
+#8 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(174): CListView->run()
+#9 /Users/mjparinas/Documents/Zimity-PHP/protected/views/imprint/index.php(17): ImprintController->widget()
+#10 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(127): require()
+#11 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CBaseController.php(96): ImprintController->renderInternal()
+#12 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(870): ImprintController->renderFile()
+#13 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(783): ImprintController->renderPartial()
+#14 /Users/mjparinas/Documents/Zimity-PHP/protected/controllers/ImprintController.php(133): ImprintController->render()
+#15 /Users/mjparinas/Documents/Zimity-PHP/framework/web/actions/CInlineAction.php(50): ImprintController->actionIndex()
+#16 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(309): CInlineAction->runWithParams()
+#17 /Users/mjparinas/Documents/Zimity-PHP/framework/web/filters/CFilterChain.php(134): ImprintController->runAction()
+#18 /Users/mjparinas/Documents/Zimity-PHP/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#20 /Users/mjparinas/Documents/Zimity-PHP/framework/web/filters/CInlineFilter.php(59): ImprintController->filterAccessControl()
+#21 /Users/mjparinas/Documents/Zimity-PHP/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#22 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(292): CFilterChain->run()
+#23 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(266): ImprintController->runActionWithFilters()
+#24 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): ImprintController->run()
+#25 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#26 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=imprint/index
+in /Users/mjparinas/Documents/Zimity-PHP/protected/views/imprint/_view.php (51)
+in /Users/mjparinas/Documents/Zimity-PHP/protected/views/imprint/index.php (17)
+in /Users/mjparinas/Documents/Zimity-PHP/protected/controllers/ImprintController.php (133)
+2012/03/01 23:32:25 [error] [php] Undefined offset: 0 (/Users/mjparinas/Documents/Zimity-PHP/protected/views/imprint/view.php:43)
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(870): ImprintController->renderFile()
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(783): ImprintController->renderPartial()
+#2 /Users/mjparinas/Documents/Zimity-PHP/protected/controllers/ImprintController.php(55): ImprintController->render()
+#3 unknown(0): ImprintController->actionView()
+#4 /Users/mjparinas/Documents/Zimity-PHP/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /Users/mjparinas/Documents/Zimity-PHP/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /Users/mjparinas/Documents/Zimity-PHP/framework/web/filters/CFilterChain.php(134): ImprintController->runAction()
+#8 /Users/mjparinas/Documents/Zimity-PHP/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#10 /Users/mjparinas/Documents/Zimity-PHP/framework/web/filters/CInlineFilter.php(59): ImprintController->filterAccessControl()
+#11 /Users/mjparinas/Documents/Zimity-PHP/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#12 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(292): CFilterChain->run()
+#13 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(266): ImprintController->runActionWithFilters()
+#14 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): ImprintController->run()
+#15 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#16 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=imprint/view&id=36
+in /Users/mjparinas/Documents/Zimity-PHP/protected/views/imprint/view.php (43)
+in /Users/mjparinas/Documents/Zimity-PHP/protected/controllers/ImprintController.php (55)
+in /Users/mjparinas/Documents/Zimity-PHP/index.php (13)
+2012/03/02 00:08:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users/index".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('users/index')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=users/index
+---
+2012/03/02 00:19:23 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'zimity.LoginForm' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `LoginForm`.
+in /Users/mjparinas/Documents/Zimity-PHP/protected/controllers/SiteController.php (74)
+in /Users/mjparinas/Documents/Zimity-PHP/index.php (13)
+2012/03/02 00:19:23 [error] [exception.CDbException] exception 'CDbException' with message 'The table "LoginForm" for active record class "LoginForm" cannot be found in the database.' in /Users/mjparinas/Documents/Zimity-PHP/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(LoginForm))
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/db/ar/CActiveRecord.php(394): CActiveRecord::model('LoginForm')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/db/ar/CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 /Users/mjparinas/Documents/Zimity-PHP/protected/controllers/SiteController.php(74): CActiveRecord->__construct()
+#4 /Users/mjparinas/Documents/Zimity-PHP/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#5 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('login')
+#9 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('site/login')
+#10 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://localhost:8888/index.php?r=user/view&id=1
+---
+2012/03/02 00:20:29 [error] [exception.CException] exception 'CException' with message 'Property "User.modifed" is not defined.' in /Users/mjparinas/Documents/Zimity-PHP/framework/base/CComponent.php:174
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/db/ar/CActiveRecord.php(160): CComponent->__set('modifed', Object(CDbExpression))
+#1 /Users/mjparinas/Documents/Zimity-PHP/protected/models/ZimityActiveRecord.php(9): CActiveRecord->__set('modifed', Object(CDbExpression))
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CModel.php(155): ZimityActiveRecord->beforeValidate()
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/db/ar/CActiveRecord.php(786): CModel->validate(NULL)
+#4 /Users/mjparinas/Documents/Zimity-PHP/protected/controllers/UserController.php(96): CActiveRecord->save()
+#5 [internal function]: UserController->actionUpdate('1')
+#6 /Users/mjparinas/Documents/Zimity-PHP/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#7 /Users/mjparinas/Documents/Zimity-PHP/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#8 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /Users/mjparinas/Documents/Zimity-PHP/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /Users/mjparinas/Documents/Zimity-PHP/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /Users/mjparinas/Documents/Zimity-PHP/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /Users/mjparinas/Documents/Zimity-PHP/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(292): CFilterChain->run()
+#15 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('update')
+#17 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('user/update')
+#18 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php?r=user/update&id=1
+HTTP_REFERER=http://localhost:8888/index.php?r=user/update&id=1
+---
+2012/03/02 00:26:09 [warning] [application] Failed to set unsafe attribute "created" of "User".
+in /Users/mjparinas/Documents/Zimity-PHP/protected/controllers/UserController.php (71)
+in /Users/mjparinas/Documents/Zimity-PHP/index.php (13)
+2012/03/02 00:26:09 [warning] [application] Failed to set unsafe attribute "modified" of "User".
+in /Users/mjparinas/Documents/Zimity-PHP/protected/controllers/UserController.php (71)
+in /Users/mjparinas/Documents/Zimity-PHP/index.php (13)
+2012/03/02 00:26:15 [warning] [application] Failed to set unsafe attribute "created" of "User".
+in /Users/mjparinas/Documents/Zimity-PHP/protected/controllers/UserController.php (71)
+in /Users/mjparinas/Documents/Zimity-PHP/index.php (13)
+2012/03/02 00:26:15 [warning] [application] Failed to set unsafe attribute "modified" of "User".
+in /Users/mjparinas/Documents/Zimity-PHP/protected/controllers/UserController.php (71)
+in /Users/mjparinas/Documents/Zimity-PHP/index.php (13)

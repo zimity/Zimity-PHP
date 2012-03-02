@@ -12,7 +12,7 @@
  * @property string $created
  * @property string $modified
  */
-class Comment extends CActiveRecord
+class Comment extends ZimityActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
@@ -42,7 +42,6 @@ class Comment extends CActiveRecord
 		return array(
 			array('imprint_id, user_id, comment, deleted', 'required'),
 			array('imprint_id, user_id, deleted', 'numerical', 'integerOnly'=>true),
-			array('created, modified', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, imprint_id, user_id, comment, deleted, created, modified', 'safe', 'on'=>'search'),
