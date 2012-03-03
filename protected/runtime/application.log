@@ -1609,3 +1609,616 @@ in /Users/mjparinas/Documents/Zimity-PHP/index.php (13)
 2012/03/02 00:26:15 [warning] [application] Failed to set unsafe attribute "modified" of "User".
 in /Users/mjparinas/Documents/Zimity-PHP/protected/controllers/UserController.php (71)
 in /Users/mjparinas/Documents/Zimity-PHP/index.php (13)
+2012/03/02 00:52:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "plugins.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('plugins.js')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('plugins.js')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('user/plugins.js')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/plugins.js
+HTTP_REFERER=http://localhost:8888/index.php/user/
+---
+2012/03/02 00:52:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "libs".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('libs')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('libs')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('user/libs/moder...')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/libs/modernizr-2.0.6.min.js
+HTTP_REFERER=http://localhost:8888/index.php/user/
+---
+2012/03/02 00:52:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "script.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('script.js')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('script.js')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('user/script.js')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/script.js
+HTTP_REFERER=http://localhost:8888/index.php/user/
+---
+2012/03/02 00:52:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "libs".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('libs')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('libs')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('user/libs/moder...')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/libs/modernizr-2.0.6.min.js
+HTTP_REFERER=http://localhost:8888/index.php/user/index
+---
+2012/03/02 00:52:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "plugins.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('plugins.js')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('plugins.js')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('user/plugins.js')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/plugins.js
+HTTP_REFERER=http://localhost:8888/index.php/user/index
+---
+2012/03/02 00:52:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "script.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('script.js')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('script.js')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('user/script.js')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/script.js
+HTTP_REFERER=http://localhost:8888/index.php/user/index
+---
+2012/03/02 00:52:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "libs".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('libs')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('libs')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('user/libs/moder...')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/libs/modernizr-2.0.6.min.js
+HTTP_REFERER=http://localhost:8888/index.php/user/create
+---
+2012/03/02 00:52:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "plugins.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('plugins.js')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('plugins.js')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('user/plugins.js')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/plugins.js
+HTTP_REFERER=http://localhost:8888/index.php/user/create
+---
+2012/03/02 00:52:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "script.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('script.js')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('script.js')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('user/script.js')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/script.js
+HTTP_REFERER=http://localhost:8888/index.php/user/create
+---
+2012/03/02 00:55:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/03/02 00:56:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-alerts.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-alerts.js
+HTTP_REFERER=http://localhost:8888/index.php/user/create
+---
+2012/03/02 00:56:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-scrollspy.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-scrollspy.js
+HTTP_REFERER=http://localhost:8888/index.php/user/create
+---
+2012/03/02 00:56:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-modal.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-modal.js
+HTTP_REFERER=http://localhost:8888/index.php/user/create
+---
+2012/03/02 00:56:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "libs".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('libs')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('libs')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('user/libs/moder...')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/libs/modernizr-2.0.6.min.js
+HTTP_REFERER=http://localhost:8888/index.php/user/create
+---
+2012/03/02 00:56:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-tabs.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-tabs.js
+HTTP_REFERER=http://localhost:8888/index.php/user/create
+---
+2012/03/02 00:56:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-buttons.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-buttons.js
+HTTP_REFERER=http://localhost:8888/index.php/user/create
+---
+2012/03/02 00:56:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "plugins.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('plugins.js')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('plugins.js')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('user/plugins.js')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/plugins.js
+HTTP_REFERER=http://localhost:8888/index.php/user/create
+---
+2012/03/02 00:56:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-popover.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-popover.js
+HTTP_REFERER=http://localhost:8888/index.php/user/create
+---
+2012/03/02 00:56:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "script.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('script.js')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('script.js')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('user/script.js')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/script.js
+HTTP_REFERER=http://localhost:8888/index.php/user/create
+---
+2012/03/02 00:56:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-dropdown.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-dropdown.js
+HTTP_REFERER=http://localhost:8888/index.php/user/create
+---
+2012/03/02 00:56:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-twipsy.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-twipsy.js
+HTTP_REFERER=http://localhost:8888/index.php/user/create
+---
+2012/03/02 00:56:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/03/02 00:56:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-modal.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-modal.js
+HTTP_REFERER=http://localhost:8888/user/create
+---
+2012/03/02 00:56:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-dropdown.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-dropdown.js
+HTTP_REFERER=http://localhost:8888/user/create
+---
+2012/03/02 00:56:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-scrollspy.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-scrollspy.js
+HTTP_REFERER=http://localhost:8888/user/create
+---
+2012/03/02 00:56:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-alerts.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-alerts.js
+HTTP_REFERER=http://localhost:8888/user/create
+---
+2012/03/02 00:56:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "plugins.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('plugins.js')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('plugins.js')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('user/plugins.js')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/user/plugins.js
+HTTP_REFERER=http://localhost:8888/user/create
+---
+2012/03/02 00:56:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-tabs.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-tabs.js
+HTTP_REFERER=http://localhost:8888/user/create
+---
+2012/03/02 00:56:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-buttons.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-buttons.js
+HTTP_REFERER=http://localhost:8888/user/create
+---
+2012/03/02 00:56:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-popover.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-popover.js
+HTTP_REFERER=http://localhost:8888/user/create
+---
+2012/03/02 00:56:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "script.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('script.js')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('script.js')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('user/script.js')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/user/script.js
+HTTP_REFERER=http://localhost:8888/user/create
+---
+2012/03/02 00:56:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-twipsy.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-twipsy.js
+HTTP_REFERER=http://localhost:8888/user/create
+---
+2012/03/02 00:56:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "libs".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('libs')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('libs')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('user/libs/moder...')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/user/libs/modernizr-2.0.6.min.js
+HTTP_REFERER=http://localhost:8888/user/create
+---
+2012/03/02 00:56:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/03/02 00:56:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-alerts.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-alerts.js
+HTTP_REFERER=http://localhost:8888/user/index
+---
+2012/03/02 00:56:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-dropdown.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-dropdown.js
+HTTP_REFERER=http://localhost:8888/user/index
+---
+2012/03/02 00:56:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-modal.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-modal.js
+HTTP_REFERER=http://localhost:8888/user/index
+---
+2012/03/02 00:56:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-scrollspy.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-scrollspy.js
+HTTP_REFERER=http://localhost:8888/user/index
+---
+2012/03/02 00:56:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-twipsy.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-twipsy.js
+HTTP_REFERER=http://localhost:8888/user/index
+---
+2012/03/02 00:56:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-tabs.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-tabs.js
+HTTP_REFERER=http://localhost:8888/user/index
+---
+2012/03/02 00:56:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-buttons.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-buttons.js
+HTTP_REFERER=http://localhost:8888/user/index
+---
+2012/03/02 00:56:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "libs".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('libs')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('libs')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('user/libs/moder...')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/user/libs/modernizr-2.0.6.min.js
+HTTP_REFERER=http://localhost:8888/user/index
+---
+2012/03/02 00:56:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "script.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('script.js')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('script.js')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('user/script.js')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/user/script.js
+HTTP_REFERER=http://localhost:8888/user/index
+---
+2012/03/02 00:56:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-popover.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-popover.js
+HTTP_REFERER=http://localhost:8888/user/index
+---
+2012/03/02 00:56:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "plugins.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php:484
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CController.php(271): CController->missingAction('plugins.js')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(276): CController->run('plugins.js')
+#2 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('user/plugins.js')
+#3 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/user/plugins.js
+HTTP_REFERER=http://localhost:8888/user/index
+---
+2012/03/02 00:56:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/03/02 00:56:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/03/02 00:57:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-dropdown.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-dropdown.js
+HTTP_REFERER=http://localhost:8888/user/create
+---
+2012/03/02 00:57:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-twipsy.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-twipsy.js
+HTTP_REFERER=http://localhost:8888/user/create
+---
+2012/03/02 00:57:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-buttons.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-buttons.js
+HTTP_REFERER=http://localhost:8888/user/create
+---
+2012/03/02 00:57:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-scrollspy.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-scrollspy.js
+HTTP_REFERER=http://localhost:8888/user/create
+---
+2012/03/02 00:57:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/03/02 01:00:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/03/02 01:00:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "libs/modernizr-2.0.6.min.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('libs/modernizr-...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/libs/modernizr-2.0.6.min.js
+HTTP_REFERER=http://localhost:8888/
+---
+2012/03/02 01:00:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-alerts.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-alerts.js
+HTTP_REFERER=http://localhost:8888/
+---
+2012/03/02 01:00:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-modal.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-modal.js
+HTTP_REFERER=http://localhost:8888/
+---
+2012/03/02 01:00:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-scrollspy.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-scrollspy.js
+HTTP_REFERER=http://localhost:8888/
+---
+2012/03/02 01:00:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-buttons.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-buttons.js
+HTTP_REFERER=http://localhost:8888/
+---
+2012/03/02 01:00:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-tabs.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-tabs.js
+HTTP_REFERER=http://localhost:8888/
+---
+2012/03/02 01:00:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-twipsy.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-twipsy.js
+HTTP_REFERER=http://localhost:8888/
+---
+2012/03/02 01:00:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "script.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('script.js')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/script.js
+HTTP_REFERER=http://localhost:8888/
+---
+2012/03/02 01:00:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-popover.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-popover.js
+HTTP_REFERER=http://localhost:8888/
+---
+2012/03/02 01:00:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "plugins.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('plugins.js')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/plugins.js
+HTTP_REFERER=http://localhost:8888/
+---
+2012/03/02 01:00:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-dropdown.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-dropdown.js
+HTTP_REFERER=http://localhost:8888/
+---
+2012/03/02 01:00:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
