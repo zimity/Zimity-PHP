@@ -8,3 +8,10 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 # otherwise forward it to index.php
 RewriteRule . index.php
+
+ExpiresActive On
+
+#Expire Header
+<FilesMatch "\.(ico|jpg|jpeg|png|gif|js|css|swf)$">
+ExpiresDefault "access plus 7 days"
+</FilesMatch>

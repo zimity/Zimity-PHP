@@ -94,7 +94,7 @@ class Imprint extends ZimityActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('user_id, imp_type, title, note, slug, latitude, longitude, altitude, bearing, speed, sharing, accuracy, syncd, deleted, created, modified', 'required'),
+			array('user_id, imp_type, title, note, slug, latitude, longitude, altitude, bearing, speed, sharing, accuracy, syncd, deleted', 'required'),
 			array('imp_type, sharing, syncd, deleted', 'numerical', 'integerOnly'=>true),
 			array('latitude, longitude, altitude, bearing, speed, accuracy', 'numerical'),
 			array('user_id', 'length', 'max'=>20),

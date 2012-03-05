@@ -52,9 +52,8 @@
   <?php echo Chtml::scriptFile('libs/modernizr-2.0.6.min.js'); ?>
 
 <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
-
 
   <?php echo Chtml::scriptFile('/js/fancybox/jquery.mousewheel-3.0.4.pack.js'); ?>
   <?php echo Chtml::scriptFile('/js/fancybox/jquery.fancybox-1.3.4.pack.js'); ?>

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 01, 2012 at 12:52 AM
+-- Generation Time: Mar 05, 2012 at 12:37 AM
 -- Server version: 5.5.9
 -- PHP Version: 5.3.6
 
@@ -61,7 +61,7 @@ CREATE TABLE `imprint` (
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=53 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=52 ;
 
 --
 -- Dumping data for table `imprint`
@@ -95,7 +95,7 @@ CREATE TABLE `message` (
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 --
 -- Dumping data for table `message`
@@ -111,6 +111,7 @@ CREATE TABLE `message` (
 CREATE TABLE `user` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `type` smallint(6) NOT NULL,
+  `username` varchar(20) NOT NULL,
   `firstname` varchar(20) DEFAULT NULL,
   `lastname` varchar(20) DEFAULT NULL,
   `quote` varchar(50) NOT NULL,
@@ -124,12 +125,15 @@ CREATE TABLE `user` (
   `deleted` tinyint(1) NOT NULL,
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
+  `last_login` datetime DEFAULT NULL,
+  `password` varchar(40) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` VALUES(1, 1, 'Melvin', 'Parinas', 'Life begins at the end of your comfort.', 'Ottawa, ON', 'Hello, I am a programmer.', 'mjparinas@gmail.com', 1, '', NULL, NULL, 0, '2010-11-30 01:20:34', '2010-11-30 01:20:37');
-INSERT INTO `user` VALUES(2, 1, 'jay', 'parinas', 'sdfsfsdfkj', 'kjn', 'kjnkj', 'sfsdf@sdfs.com', 1, '1', '', '', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+INSERT INTO `user` VALUES(1, 2, '', 'Melvin', 'Parinas', 'Life begins at the end of your comfort.', 'Ottawa, ON', 'Hello, I am a programmer.', 'mjparinas@gmail.com', 1, 'adsfadf', '', '', 0, '2010-11-30 01:20:34', '2012-03-02 00:21:50', '0000-00-00 00:00:00', '');
+INSERT INTO `user` VALUES(2, 1, '', 'jay', 'parinas', 'sdfsfsdfkj', 'kjn', 'kjnkj', 'sfsdf@sdfs.com', 1, '1', '', '', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '');
+INSERT INTO `user` VALUES(8, 0, 'admin', NULL, NULL, '', '', '', 'admin@admin.com', 0, '', NULL, NULL, 0, '2012-03-05 00:28:11', '2012-03-05 00:28:11', NULL, 'eef286eb5e58bbfaebe1518e4e3dc51a0fd58556');

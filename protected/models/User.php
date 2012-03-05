@@ -19,6 +19,8 @@
  * @property integer $deleted
  * @property string $created
  * @property string $modified
+ * @property string $last_login
+ * @property string $password
  */
 class User extends ZimityActiveRecord
 {
@@ -50,13 +52,16 @@ class User extends ZimityActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('type, quote, location, about, email, activated, activation_hash, deleted', 'required'),
+			array('username, email, password', 'required'),
 			array('type, activated, deleted', 'numerical', 'integerOnly'=>true),
 			array('firstname, lastname, location', 'length', 'max'=>20),
-			array('quote, email, facebook, twitter', 'length', 'max'=>50),
+			array('quote, email, facebook, twitter, password', 'length', 'max'=>50),
 			array('about', 'length', 'max'=>255),
 			array('activation_hash', 'length', 'max'=>40),
 			array('email', 'unique'),
+			array('email','email'),
+			array('password', 'compare'),
+			array('password_repeat', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, type, firstname, lastname, quote, location, about, email, activated, activation_hash, facebook, twitter, deleted, created, modified', 'safe', 'on'=>'search'),
@@ -130,5 +135,15 @@ class User extends ZimityActiveRecord
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
+	}
+	
+	protected function afterValidate() {
+		parent::afterValidate();
+		$this->password = $this->encrypt($this->password);
+	}
+	
+	public function encrypt($value) {
+		$salt = "Z1M1TY";
+		return sha1($value . $salt);
 	}
 }

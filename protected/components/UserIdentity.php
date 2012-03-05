@@ -7,6 +7,8 @@
  */
 class UserIdentity extends CUserIdentity
 {
+	private $_id;
+	
 	/**
 	 * Authenticates a user.
 	 * The example implementation makes sure if the username and password
@@ -15,7 +17,7 @@ class UserIdentity extends CUserIdentity
 	 * against some persistent user identity storage (e.g. database).
 	 * @return boolean whether authentication succeeds.
 	 */
-	public function authenticate()
+	public function authenticate2()
 	{
 		$users=array(
 			// username => password
@@ -30,4 +32,40 @@ class UserIdentity extends CUserIdentity
 			$this->errorCode=self::ERROR_NONE;
 		return !$this->errorCode;
 	}
+
+
+    public function authenticate()
+       {
+           $user=User::model()->findByAttributes(array('username'=>$this->username));
+           if($user===null)
+           {
+         $this->errorCode=self::ERROR_USERNAME_INVALID;
+         }
+else {
+             if($user->password!==$user->encrypt($this->password))
+             {
+           $this->errorCode=self::ERROR_PASSWORD_INVALID;
+}
+else
+             {
+                 $this->_id = $user->id;
+                 if(null===$user->last_login)
+                 {
+             $lastLogin = time();
+           }
+else
+               {
+             $lastLogin = strtotime($user->last_login);
+           }
+               $this->setState('lastLogin', $lastLogin); $this->errorCode=self::ERROR_NONE;
+         }
+}
+           return !$this->errorCode;
+       }
+
+       
+       public function getId()
+       {
+           return $this->_id;
+       }
 }
