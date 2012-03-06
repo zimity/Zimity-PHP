@@ -36,36 +36,36 @@ class UserIdentity extends CUserIdentity
 
     public function authenticate()
        {
-           $user=User::model()->findByAttributes(array('username'=>$this->username));
-           if($user===null)
-           {
-         $this->errorCode=self::ERROR_USERNAME_INVALID;
-         }
+		$user=User::model()->findByAttributes(array('username'=>$this->username));
+	   if($user===null)
+	   {
+	 $this->errorCode=self::ERROR_USERNAME_INVALID;
+	 }
 else {
-             if($user->password!==$user->encrypt($this->password))
-             {
-           $this->errorCode=self::ERROR_PASSWORD_INVALID;
+	     if($user->password!==$user->encrypt($this->password))
+	     {
+	   $this->errorCode=self::ERROR_PASSWORD_INVALID;
 }
 else
-             {
-                 $this->_id = $user->id;
-                 if(null===$user->last_login)
-                 {
-             $lastLogin = time();
-           }
+	     {
+		 $this->_id = $user->id;
+		 if(null===$user->last_login)
+		 {
+	     $lastLogin = time();
+	   }
 else
-               {
-             $lastLogin = strtotime($user->last_login);
-           }
-               $this->setState('lastLogin', $lastLogin); $this->errorCode=self::ERROR_NONE;
-         }
+	       {
+	     $lastLogin = strtotime($user->last_login);
+	   }
+	       $this->setState('lastLogin', $lastLogin); $this->errorCode=self::ERROR_NONE;
+	 }
 }
-           return !$this->errorCode;
+	   return !$this->errorCode;
        }
 
        
        public function getId()
        {
-           return $this->_id;
+	   return $this->_id;
        }
 }

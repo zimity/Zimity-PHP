@@ -2,7 +2,7 @@
          <div class="hero-unit">
         <div class="row">
            <div class="span5 offset1">
-              <?php echo CHtml::image('/images/mobile.png'); ?>
+              <?php echo CHtml::image('/img/mobile.png'); ?>
            </div>
               <h1>Zimity <small>for Android 2.1+</small></h1>
               <br />
