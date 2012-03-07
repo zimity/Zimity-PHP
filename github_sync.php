@@ -1,0 +1,3 @@
+Github Sync Starting...
+
+<?php `git pull`; ?>

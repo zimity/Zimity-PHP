@@ -71,6 +71,8 @@
   <?php echo Chtml::scriptFile('/js/bootstrap/bootstrap-tab.js'); ?>
 
   <link rel="stylesheet" type="text/css" href="/js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+  
+  <!-- start Mixpanel --><script type="text/javascript">var mpq=[];mpq.push(["init","9d3790a6cbaf34194d806641fe0dca21"]);(function(){var b,a,e,d,c;b=document.createElement("script");b.type="text/javascript";b.async=true;b.src=(document.location.protocol==="https:"?"https:":"http:")+"//api.mixpanel.com/site_media/js/api/mixpanel.js";a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a);e=function(f){return function(){mpq.push([f].concat(Array.prototype.slice.call(arguments,0)))}};d=["init","track","track_links","track_forms","register","register_once","identify","name_tag","set_config"];for(c=0;c<d.length;c++){mpq[d[c]]=e(d[c])}})();</script><!-- end Mixpanel -->
 </head>
 
 <body>
@@ -131,6 +133,7 @@
         <?php echo $content ?>
 
       <br />
+      <p class="pull-right"><a href="https://mixpanel.com/f/partner"><img src="https://mixpanel.com/site_media/images/partner/badge_light.png" alt="Real Time Web Analytics" /></a></p>
 
       <footer>
             <?php echo CHtml::link('About', array('site/page', 'view'=>'about')); ?> &middot;

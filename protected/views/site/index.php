@@ -1,5 +1,8 @@
+	<script type="text/javascript">mpq.track("Zimity Index");</script>
+	<script type="text/javascript">var _kiq = _kiq || [];</script>
+	<script type="text/javascript" src="//s3.amazonaws.com/ki.js/9325/1AV.js" async="true"></script>
 
-         <div class="hero-unit">
+        <div class="hero-unit">
         <div class="row">
            <div class="span5 offset1">
               <?php echo CHtml::image('/img/mobile.png'); ?>
