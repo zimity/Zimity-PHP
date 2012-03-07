@@ -1362,3 +1362,74 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/img/favicon.ico
 ---
+2012/03/06 21:45:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "libs/modernizr-2.0.6.min.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('libs/modernizr-...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/libs/modernizr-2.0.6.min.js
+HTTP_REFERER=http://localhost:8888/
+---
+2012/03/06 21:45:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-alerts.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-alerts.js
+HTTP_REFERER=http://localhost:8888/
+---
+2012/03/06 21:45:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-tabs.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-tabs.js
+HTTP_REFERER=http://localhost:8888/
+---
+2012/03/06 21:45:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-buttons.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-buttons.js
+HTTP_REFERER=http://localhost:8888/
+---
+2012/03/06 21:45:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap/bootstrap-twipsy.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('js/bootstrap/bo...')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap/bootstrap-twipsy.js
+HTTP_REFERER=http://localhost:8888/
+---
+2012/03/06 21:45:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "plugins.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('plugins.js')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/plugins.js
+HTTP_REFERER=http://localhost:8888/
+---
+2012/03/06 21:45:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "script.js".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('script.js')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/script.js
+HTTP_REFERER=http://localhost:8888/
+---
+2012/03/06 21:45:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/favicon.ico".' in /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/mjparinas/Documents/Zimity-PHP/framework/web/CWebApplication.php(135): CWebApplication->runController('img/favicon.ico')
+#1 /Users/mjparinas/Documents/Zimity-PHP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/mjparinas/Documents/Zimity-PHP/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/favicon.ico
+---
