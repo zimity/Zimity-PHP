@@ -7,7 +7,7 @@
            <div class="span5 offset1">
               <?php echo CHtml::image('/img/mobile.png'); ?>
            </div>
-              <h1>Zimity <small>for Android 2.1+</small></h1>
+              <h1>Zimity <small>for Android 4.0+</small></h1>
               <br />
               <p>Zimity allows you to effortlessly create and share photos, videos and notes from your current location using your GPS enabled mobile phone. You can also discover local deals, bookmark important locations or chat with nearby Zimity users.</p>
               <p>Come join us and leave your mark wherever life takes you!</p>
