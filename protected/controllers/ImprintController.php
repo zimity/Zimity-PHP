@@ -50,9 +50,28 @@ class ImprintController extends Controller
 	 */
 	public function actionView($id)
 	{
+		$imprint = $this->loadModel($id);
+		$comment = $this->createComment($imprint);
+		
 		$this->render('view',array(
-			'model'=>$this->loadModel($id),
+			'model'=>$imprint,
+			'comment'=>$comment,
 		));
+	}
+	
+	protected function createComment($imprint) {
+		$comment = new Comment;
+		
+		if (isset($_POST['Comment'])) {
+			$comment->attributes = $_POST['Comment'];
+			$comment->user_id = Yii::app()->user->id;
+			if ($imprint->addComment($comment)) {
+				Yii::app()->user->setFlash('commentSubmitted', "Your comment has been added");
+				$this->refresh();
+			}
+		}
+		
+		return $comment;
 	}
 
 	/**

@@ -15,11 +15,3 @@ $this->menu=array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
 )); ?>
-
-
-<?php
-$post=User::model()->findByPk(2);
-$author=$post->imprints;
-
-echo print_r($author);
-?>

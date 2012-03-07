@@ -24,18 +24,18 @@
  */
 class Imprint extends ZimityActiveRecord
 {
-	const TYPE_NOTE = 0;
-	const TYPE_PHOTO = 1;
-	const TYPE_AUDIO = 2;
-	const TYPE_VIDEO = 3;
-	const TYPE_REMINDER = 4;
-	const TYPE_EVENT = 5;
-	const TYPE_DEAL = 6;
-	const TYPE_BOOKMARK = 7;
+	const TYPE_NOTE = 1;
+	const TYPE_PHOTO = 2;
+	const TYPE_AUDIO = 3;
+	const TYPE_VIDEO = 4;
+	const TYPE_REMINDER = 5;
+	const TYPE_EVENT = 6;
+	const TYPE_DEAL = 7;
+	const TYPE_BOOKMARK = 8;
 	
-	const SHARE_PRIVATE = 0;
-	const SHARE_FRIENDS = 1;
-	const SHARE_GLOBAL = 2;
+	const SHARE_PRIVATE = 1;
+	const SHARE_FRIENDS = 2;
+	const SHARE_GLOBAL = 3;
 	
 	public function getImprintType() {
 		return array(
@@ -116,6 +116,7 @@ class Imprint extends ZimityActiveRecord
 		return array(
 			'user' => array(self::BELONGS_TO, 'User', 'user_id'),
 			'comments' => array(self::HAS_MANY, 'Comment', 'imprint_id'),
+			'commentCount' => array(self::STAT, 'Comment', 'imprint_id'),
 		);
 	}
 
@@ -177,5 +178,10 @@ class Imprint extends ZimityActiveRecord
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
+	}
+	
+	public function addComment($comment) {
+		$comment->imprint_id = $this->id;
+		return $comment->save();
 	}
 }

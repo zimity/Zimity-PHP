@@ -29,91 +29,104 @@
         <li><a href="#events" data-toggle="tab">Events</a></li>
         <li><a href="#reminders" data-toggle="tab">Reminders</a></li>
         <li><a href="#deals" data-toggle="tab">Deals</a></li>
+	<li><a href="#bookmarks" data-toggle="tab">Bookmarks</a></li>
       </ul>
       
       <div class="tab-content">
         <div class="tab-pane active" id="photos">
           <h3>Photos</h3>
 
-          <ul class="media-grid">
-	    {% for imprint in user.imprint_set.all %}
-	      {% if imprint.type == imprint.PHOTO %}
-	      <li><a rel="popover" title="{{ imprint.title }}" data-content="{{ imprint.content }}" href="{{ imprint.get_absolute_url }}"><img alt="{{ imprint.title}}" src="http://s3.zimity.me/{{ imprint.slug }}_s.jpg" /></a></li>
-	      {% endif %}
-	    {% endfor %}
+          <ul class="thumbnails">
+	    <?php foreach($model->imprints as $imprint): ?>
+		<?php if ($imprint->imp_type == Imprint::TYPE_PHOTO): ?>
+			<li><a rel="popover" class="thumbnail" title="<?php echo $imprint->title; ?>" data-content="<?php echo $imprint->note; ?>" href="/imprint/view/id/<?php echo $imprint->id; ?>"><img alt="<?php echo $imprint->title; ?>" src="http://s3.zimity.me/<?php echo $imprint->slug; ?>_s.jpg" /></a></li>
+		<?php endif; ?>
+	    <?php endforeach; ?>
           </ul>
         </div>
 
         <div class="tab-pane" id="videos">
           <h3>Videos</h3>
 
-	  <ul class="media-grid">
-	    {% for imprint in user.imprint_set.all %}
-	      {% if imprint.type == imprint.VIDEO %}
-	      <li><a rel="popover" title="{{ imprint.title }}" href="{{ imprint.get_absolute_url }}"><img alt="{{ imprint.title }}" src="http://s3.zimity.me/{{ imprint.slug }}_s.jpg" /></a></li>
-	      {% endif %}
-	    {% endfor %}
+	  <ul class="thumbnails">
+	    <?php foreach($model->imprints as $imprint): ?>
+		<?php if ($imprint->imp_type == Imprint::TYPE_VIDEO): ?>
+			<li><a rel="popover" class="thumbnail" title="<?php echo $imprint->title; ?>" data-content="<?php echo $imprint->note; ?>" href="/imprint/view/id/<?php echo $imprint->id; ?>"><img alt="<?php echo $imprint->title; ?>" src="http://s3.zimity.me/<?php echo $imprint->slug; ?>_s.jpg" /></a></li>
+		<?php endif; ?>
+	    <?php endforeach; ?>
 	  </ul>
         </div>
 
         <div class="tab-pane" id="notes">
           <h3>Notes</h3>
 
-	  <ul class="media-grid">
-	    {% for imprint in user.imprint_set.all %}
-	      {% if imprint.type == imprint.NOTE %}
-	      <li><a rel="popover" title="{{ imprint.title }}" data-content="{{ imprint.content }}" href="{{ imprint.get_absolute_url }}">{{ imprint.title }}</a></li>
-	      {% endif %}
-	    {% endfor %}
+	  <ul class="thumbnails">
+	    <?php foreach($model->imprints as $imprint): ?>
+		<?php if ($imprint->imp_type == Imprint::TYPE_NOTE): ?>
+			<li><a rel="popover" class="thumbnail" title="<?php echo $imprint->title; ?>" data-content="<?php echo $imprint->note; ?>" href="/imprint/view/id/<?php echo $imprint->id; ?>"><?php echo $imprint->title; ?></a></li>
+		<?php endif; ?>
+	    <?php endforeach; ?>
 	  </ul>
         </div>
 
         <div class="tab-pane" id="audio">
           <h3>Audio</h3>
 
-	  <ul class="media-grid">
-	    {% for imprint in user.imprint_set.all %}
-	      {% if imprint.type == imprint.AUDIO %}
-	      <li><a rel="popover" title="{{ imprint.title }}" href="{{ imprint.get_absolute_url }}"><img alt="{{ imprint.title}}" src="http://s3.zimity.me/{{ imprint.slug }}_s.jpg" /></a></li>
-	      {% endif %}
-	    {% endfor %}
+	  <ul class="thumbnails">
+	    <?php foreach($model->imprints as $imprint): ?>
+		<?php if ($imprint->imp_type == Imprint::TYPE_AUDIO): ?>
+			<li><a rel="popover" class="thumbnail" title="<?php echo $imprint->title; ?>" data-content="<?php echo $imprint->note; ?>" href="{{ imprint.get_absolute_url }}"><img alt="<?php echo $imprint->title; ?>" src="http://s3.zimity.me/<?php echo $imprint->slug; ?>_s.jpg" /></a></li>
+		<?php endif; ?>
+	    <?php endforeach; ?>
 	  </ul>
         </div>
 
         <div class="tab-pane" id="events">
           <h3>Events</h3>
 
-	  <ul class="media-grid">
-	    {% for imprint in user.imprint_set.all %}
-	      {% if imprint.type == imprint.EVENT %}
-	      <li><a rel="popover" title="{{ imprint.title }}" href="{{ imprint.get_absolute_url }}"><img alt="{{ imprint.title}}" src="http://s3.zimity.me/{{ imprint.slug }}_s.jpg" /></a></li>
-	      {% endif %}
-	    {% endfor %}
+	  <ul class="thumbnails">
+	    <?php foreach($model->imprints as $imprint): ?>
+		<?php if ($imprint->imp_type == Imprint::TYPE_EVENT): ?>
+			<li><a rel="popover" class="thumbnail" title="<?php echo $imprint->title; ?>" data-content="<?php echo $imprint->note; ?>" href="{{ imprint.get_absolute_url }}"><img alt="<?php echo $imprint->title; ?>" src="http://s3.zimity.me/<?php echo $imprint->slug; ?>_s.jpg" /></a></li>
+		<?php endif; ?>
+	    <?php endforeach; ?>
 	  </ul>
         </div>
 
         <div class="tab-pane" id="reminders">
           <h3>Reminders</h3>
 
-	  <ul class="media-grid">
-	    {% for imprint in user.imprint_set.all %}
-	      {% if imprint.type == imprint.REMINDER %}
-	      <li><a rel="popover" title="{{ imprint.title }}" href="{{ imprint.get_absolute_url }}"><img alt="{{ imprint.title}}" src="http://s3.zimity.me/{{ imprint.slug }}_s.jpg" /></a></li>
-	      {% endif %}
-	    {% endfor %}
+	  <ul class="thumbnails">
+	    <?php foreach($model->imprints as $imprint): ?>
+		<?php if ($imprint->imp_type == Imprint::TYPE_REMINDER): ?>
+			<li><a rel="popover" class="thumbnail" title="<?php echo $imprint->title; ?>" data-content="<?php echo $imprint->note; ?>" href="{{ imprint.get_absolute_url }}"><img alt="<?php echo $imprint->title; ?>" src="http://s3.zimity.me/<?php echo $imprint->slug; ?>_s.jpg" /></a></li>
+		<?php endif; ?>
+	    <?php endforeach; ?>
 	  </ul>
         </div>
 
         <div class="tab-pane" id="deals">
           <h3>Deals</h3>
 
-	  <ul class="media-grid">
-	    {% for imprint in user.imprint_set.all %}
-	      {% if imprint.type == imprint.DEAL %}
-	      <li><a rel="popover" title="{{ imprint.title }}" data-content="{{ imprint.content }}" href="{{ imprint.get_absolute_url }}"><img alt="{{ imprint.title}}" src="http://s3.zimity.me/{{ imprint.slug }}_s.jpg" /></a></li>
-	      {% endif %}
-	    {% endfor %}
+	  <ul class="thumbnails">
+	    <?php foreach($model->imprints as $imprint): ?>
+		<?php if ($imprint->imp_type == Imprint::TYPE_DEAL): ?>
+			<li><a rel="popover" class="thumbnail" title="<?php echo $imprint->title; ?>" data-content="<?php echo $imprint->note; ?>" href="{{ imprint.get_absolute_url }}"><img alt="<?php echo $imprint->title; ?>" src="http://s3.zimity.me/<?php echo $imprint->slug; ?>_s.jpg" /></a></li>
+		<?php endif; ?>
+	    <?php endforeach; ?>
 	  </ul>
+        </div>
+	
+        <div class="tab-pane" id="bookmarks">
+          <h3>Bookmarks</h3>
+
+	  <ul class="thumbnails">
+	    <?php foreach($model->imprints as $imprint): ?>
+		<?php if ($imprint->imp_type == Imprint::TYPE_BOOKMARK): ?>
+			<li><a rel="popover" class="thumbnail" title="<?php echo $imprint->title; ?>" data-content="<?php echo $imprint->note; ?>" href="{{ imprint.get_absolute_url }}"><img alt="<?php echo $imprint->title; ?>" src="http://s3.zimity.me/<?php echo $imprint->slug; ?>_s.jpg" /></a></li>
+		<?php endif; ?>
+	    <?php endforeach; ?>
+	    </ul>
         </div>
       </div>
       </div>

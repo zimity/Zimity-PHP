@@ -40,7 +40,7 @@ class Comment extends ZimityActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('imprint_id, user_id, comment, deleted', 'required'),
+			array('imprint_id, user_id, comment', 'required'),
 			array('imprint_id, user_id, deleted', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
@@ -57,6 +57,7 @@ class Comment extends ZimityActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'imprint' => array(self::BELONGS_TO, 'Imprint', 'imprint_id'),
+			'user' => array(self::BELONGS_TO, 'User', 'user_id'),
 		);
 	}
 
