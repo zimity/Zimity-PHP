@@ -100,4 +100,8 @@ class Comment extends ZimityActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+	
+	public static function findRecentComments($limit = 10) {
+		return self::model()->with('imprint')->findAll(array('order'=>'t.created DESC','limit'=>$limit,));
+	}
 }

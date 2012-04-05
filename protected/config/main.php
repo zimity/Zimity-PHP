@@ -10,7 +10,7 @@ return array(
 	'name'=>'Zimity',
 
 	// preloading 'log' component
-	'preload'=>array('log'),
+	'preload'=>array('log','bootstrap'),
 
 	// autoloading model and component classes
 	'import'=>array(
@@ -19,11 +19,15 @@ return array(
 	),
 
 	'modules'=>array(
+		'user' =>array(
+			'debug'=>true,   // REMOVE AFTER YII-USER INSTALL
+		),
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'root',
 		 	// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
+                        'generatorPaths'=>array('bootstrap.gii',),
 		),
 	),
 
@@ -42,6 +46,9 @@ return array(
 			//	'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			//),
 		),
+                'bootstrap'=>array(
+                        'class'=>'ext.bootstrap.components.Bootstrap',
+                ),
                 /*
 		'db'=>array(
 			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
@@ -53,6 +60,7 @@ return array(
 			'username' => 'root',
 			'password' => 'root',
 			'charset' => 'utf8',
+			'tablePrefix' => '',
 		),
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors

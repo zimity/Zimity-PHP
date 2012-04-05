@@ -32,7 +32,6 @@
   <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
-  <?php echo CHtml::cssFile('/css/bootstrap.min.css.new'); ?>
 
     <style type="text/css">
       body {
@@ -51,24 +50,9 @@
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
   <?php echo Chtml::scriptFile('libs/modernizr-2.0.6.min.js'); ?>
 
-<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
-
   <?php echo Chtml::scriptFile('/js/fancybox/jquery.mousewheel-3.0.4.pack.js'); ?>
   <?php echo Chtml::scriptFile('/js/fancybox/jquery.fancybox-1.3.4.pack.js'); ?>
 
-  <?php echo Chtml::scriptFile('/js/bootstrap/bootstrap-modal.js'); ?>
-  <?php echo Chtml::scriptFile('/js/bootstrap/bootstrap-alerts.js'); ?>
-  <?php echo Chtml::scriptFile('/js/bootstrap/bootstrap-dropdown.js'); ?>
-  <?php echo Chtml::scriptFile('/js/bootstrap/bootstrap-scrollspy.js'); ?>
-  <?php echo Chtml::scriptFile('/js/bootstrap/bootstrap-tabs.js'); ?>
-  <?php echo Chtml::scriptFile('/js/bootstrap/bootstrap-buttons.js'); ?>
-  <?php echo Chtml::scriptFile('/js/bootstrap/bootstrap-twipsy.js'); ?>
-  <?php echo Chtml::scriptFile('/js/bootstrap/bootstrap-popover.js'); ?>
-  <?php echo Chtml::scriptFile('/js/bootstrap/bootstrap-tooltip.js'); ?>
-  <?php echo Chtml::scriptFile('/js/bootstrap/bootstrap-typeahead.js'); ?>
-  <?php echo Chtml::scriptFile('/js/bootstrap/bootstrap-tab.js'); ?>
 
   <link rel="stylesheet" type="text/css" href="/js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
   
@@ -90,15 +74,13 @@
           <div class="nav-collapse">
             <ul class="nav">
               <li class="active"><a href="/site/">Home</a></li>
-              <li><a href="/site/page/view/about/">About</a></li>
-              <li><a href="/site/contact/">Contact</a></li>
             </ul>
 		<form class="navbar-search pull-left" action="">
 		<input type="text" class="search-query span2" placeholder="Search">
 		</form>
 		    
 	    <?php if(Yii::app()->user->isGuest):?>
-		<div class="nav pull-right"><?php echo CHtml::link('Login', array('site/login'), array('class'=>'btn btn-success btn-medium')); ?></div>
+		<div class="nav pull-right"><?php echo CHtml::link('Login', array('site/login'), array('class'=>'btn btn-success btn-medium')); ?> <?php echo CHtml::link('Register', array('site/register'), array('class'=>'btn btn-info btn-medium')); ?></div>
 	    <?php else: ?>
 	    
 	    <?php $user = User::model()->findByPk(Yii::app()->user->id); ?>
@@ -150,33 +132,12 @@
     </div> <!-- /container -->
 
   <!-- JavaScript at the bottom for fast page loading -->
-  
-  
 
   <script type="text/javascript">
     $(document).ready(function() {
        $("a[rel=twipsy]").twipsy({'placement': 'below'});
        $("a[rel=popover]").popover({offset: 10});
-
-
-        $("a.lightbox").fancybox({
-                'transitionIn'        : 'elastic',
-                'transitionOut'       : 'elastic',
-                'centerOnScroll'      : 'true',
-                'hideOnOverlayClick'  : 'true',
-                'hideOnContentClick'  : 'true',
-                'margin'              : 75,
-                'titlePosition'   : 'over',
-                'overlayColor'    : '#000',
-                'overlayOpacity'  : 0.9
-              });
-        });
   </script>
-
-  <!-- scripts concatenated and minified via ant build script-->
-  <?php echo CHtml::scriptFile('plugins.js'); ?>
-  <?php echo CHtml::scriptFile('script.js'); ?>
-  <!-- end scripts-->
 
   <script>
     window._gaq = [['_setAccount','UA-17761849-1'],['_trackPageview'],['_trackPageLoadTime']];
@@ -184,7 +145,6 @@
       load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
     });
   </script>
-
 
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->

@@ -146,10 +146,25 @@ class ImprintController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Imprint');
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
-		));
+		
+            $criteria = new CDbCriteria;
+            $total = Imprint::model()->count();
+ 
+            $pages = new CPagination($total);
+            $pages->pageSize = 5;
+            $pages->applyLimit($criteria);
+ 
+            $posts = Imprint::model()->findAll($criteria);
+ 
+        $this->render('index', array(
+                'posts' => $posts,
+                'pages' => $pages,
+            ));
+		
+		//$dataProvider=new CActiveDataProvider('Imprint');
+		//$this->render('index',array(
+		//	'dataProvider'=>$dataProvider,
+		//));
 	}
 
 	/**
@@ -174,6 +189,21 @@ class ImprintController extends Controller
 	 */
 	public function loadModel($id)
 	{
+		//if ($this->model === null) {
+		//	if (isset($_GET['id'])) {
+		//		if ($withComments) {
+		//			$this->_model = Imprint::model()->with(array('comments'=>array('with'=>'user')))->findByPk($_GET['id']);
+		//		} else {
+		//			$this->_model = Imprint::model()->findByPk($_GET['id']);
+		//		}
+		//	}
+		//	
+		//	if ($this->_model === null) {
+		//		throw new CHttpException(404,'The requested page does not exist.');
+		//	}
+		//}
+		//return $this->_model;
+		
 		$model=Imprint::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
