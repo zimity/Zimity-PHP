@@ -154,10 +154,10 @@ class ImprintController extends Controller
             $pages->pageSize = 5;
             $pages->applyLimit($criteria);
  
-            $posts = Imprint::model()->findAll($criteria);
+            $imprints = Imprint::model()->findAll($criteria);
  
         $this->render('index', array(
-                'posts' => $posts,
+                'imprints' => $imprints,
                 'pages' => $pages,
             ));
 		

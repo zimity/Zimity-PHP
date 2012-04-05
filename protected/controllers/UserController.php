@@ -50,9 +50,21 @@ class UserController extends Controller
 	 */
 	public function actionView($id)
 	{
-		$this->render('view',array(
-			'model'=>$this->loadModel($id),
-		));
+           $criteria = new CDbCriteria;
+            $total = Imprint::model()->countByAttributes(array('user_id'=>$id));
+	    
+            $pages = new CPagination($total);
+            $pages->pageSize = 5;
+            $pages->applyLimit($criteria);
+ 
+            $imprints = Imprint::model()->findAllByAttributes(array('user_id'=>$id), $criteria);
+ 
+        $this->render('view', array(
+                'imprints' => $imprints,
+                'pages' => $pages,
+		'model' => $this->loadModel($id),
+            ));		
+		
 	}
 
 	/**

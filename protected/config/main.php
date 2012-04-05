@@ -19,9 +19,6 @@ return array(
 	),
 
 	'modules'=>array(
-		'user' =>array(
-			'debug'=>true,   // REMOVE AFTER YII-USER INSTALL
-		),
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'root',
@@ -34,7 +31,6 @@ return array(
 	// application components
 	'components'=>array(
 		'user'=>array(
-			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
 		'urlManager'=>array(
@@ -87,6 +83,6 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
+		'adminEmail'=>'admin@zimity.me',
 	),
 );
